@@ -3,46 +3,10 @@ const jwt = require('jsonwebtoken');
 const forge = require('node-forge');
 
 // Datos del payload
-// const payload = {
-//   userId: 123,
-//   username: 'usuario123',
-//   email: 'usuario@example.com'
-// };
-
 const payload = {
-  "sellerId": "112353464",
-  "identityNumber": "107274734",
-  "identityType": "C",
-  "firstName": "Persona",
-  "secondName": "nombre",
-  "firstSurname": "Apell",
-  "secondSurname": "ido",
-  "birthDate": "1990/05/22",
-  "occupationId": "1",
-  "franchise": "4",
-  "expirationDate": "2027/08/23",
-  "gender": "M",
-  "bornCity": "11001",
-  "residenceCity": "11001",
-  "insuredResidenceCity": "11001",
-  "residenceAddress": "Cll 3 1b 00",
-  "insuredAddress": "Cll 5 1b 00",
-  "otpCode": "25434",
-  "paymentType": "2",
-  "financialProductId": "2",
-  "insuranceId": "62",
-  "insuranceCode": "0653",
-  "plan": "1",
-  "productNumber": "1234567890123456",
-  "tcAccountNumber": "1234567890123456789",
-  "phone": "3102873654",
-  "cellPhone": "3102873654",
-  "email": "email@outlook.com",
-  "incomes": "2000000",
-  "insuredValue": "20000000",
-  "insuredValueContent": "2000000",
-  "allyCode": "123456",
-  "allyName": "TU ALIADO"
+  userId: 123,
+  username: 'usuario123',
+  email: 'usuario@example.com'
 };
 
 // Crear el header
@@ -52,7 +16,7 @@ const header = {
 };
 
 // Clave secreta para firmar el token
-const secret = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpZGVudGl0eVR5cGUiOiJDIiwiaWRlbnRpdHlOdW1iZXIiOiI4MDc5NTA1NCIsImRhdGVUaW1lIjoiMjAyNC0wOC0wNSAxMDo0MjowMyJ9.VmwY1wmA0KDG8wTA76vHukHa27GYr4aSP-15kmJ0P9o0B5WD_YyaT-mKl2FUSsQAKul-5_h7MykFzAENf9hMkfxpygtVz6TfSFidozVLzrbxXcQ31M861on2fUNjnGDVE4sbDMQlF_2XpU1o5bARPAyskWyNv17Qa6CoMpb-QZM';
+const secret = '123445';
 
 // Función para codificar en Base64 URL
 const base64UrlEncode = (obj) => Buffer.from(JSON.stringify(obj)).toString('base64url');
